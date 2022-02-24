@@ -1,9 +1,29 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "BİLGİ";
+    //Layout = null;
 }
 
-<h2>Index</h2>
-<h3>Pencere: @ViewData["Pencere"]</h3>
-<h3>Bed: @ViewBag.bed</h3>
-<h3>Adınız: @TempData["ad"]</h3>
+<h2>BİLGİ</h2>
+<h3>AD: @ViewData["AD"]</h3>
+<h3>SOYAD: @ViewBag.SOYAD</h3>
+<h3>YAŞ: @TempData["YAŞ"]</h3>
+<div>
+    <h1>HABER</h1>
+    <div>
+        @Html.Partial("Katagori")
+    </div>
+    <div>
+        <p>
+            <h1><i>"KAN BAĞIŞINA İHTİYACIMIZ VAR"</i></h1>
+            Zelenski ayrıca "Sabahtan beri askerlerimiz ardında yaralananlar oldu.
+            Kan bağışına ihtiyacımız var. Gelin kan verin. Toplum için çalışın,
+            hepimiz için çalışın, her çalışan bize mal ve hizmet sağlamaya devam etmeli.
+            Rusya ile demokratik bağları tamamen kopardık. Ülkemizi Rusya'ya bırakmayacağız.
+            Rusya, ülkemize sabah saatlerinde Nazilerin 2. Dünya Savaşı'nda yaptığı gibi korkakça saldırmıştır.
+            Rusya vatandaşları hangi yolu seçeceklerini kendileri karar verecek. Ruslara sesleniyorum.
+            Sokağa çıkıp, tepkinizi gösterin. Sizin Rus kanallarındabunu engelleyecekler.
+            Onların amacı bir ulusu yok etmek, bu imkansız. Tarihi silemezsiniz, bu mümkün değil" dedi.
+<p>
+    </div>
+</div>

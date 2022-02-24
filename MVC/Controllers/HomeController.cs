@@ -8,8 +8,16 @@ namespace MVC.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        //GET: Home
         public ActionResult Index()
+        {
+            ViewData["AD"] = "Batuhan";
+            ViewBag.SOYAD = "Kaya";
+            TempData["YAŞ"] = "17";
+
+            return View();
+        }
+        public ActionResult Login()
         {
             ViewData["Pencere"] = "Window";
             ViewBag.bed = "Yatak";
@@ -17,5 +25,6 @@ namespace MVC.Controllers
 
             return View();
         }
+
     }
 }
