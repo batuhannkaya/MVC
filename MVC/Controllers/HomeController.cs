@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,14 +18,16 @@ namespace MVC.Controllers
 
             return View();
         }
-        public ActionResult Login()
-        {
-            ViewData["Pencere"] = "Window";
-            ViewBag.bed = "Yatak";
-            TempData["ad"] = "Gizem";
+         public ActionResult Kitap()
+         {
+            Kitap k = new Kitap();
+            k.SeriNo = 97897;
+            k.KitapAdi = "Kürk Mantolu Madonna";
+            k.Yaş = 1998;
+            k.YazarAdi = "Sabahattin Ali";
 
-            return View();
-        }
 
+            return View(k);
+         }
     }
 }
