@@ -11,9 +11,9 @@ namespace MVC.Controllers
         //GET: Home
         public ActionResult Index()
         {
-            ViewData["AD"] = "Batuhan";
-            ViewBag.SOYAD = "Kaya";
-            TempData["YAŞ"] = "17";
+            ViewData["NAME"] = "Batuhan";
+            ViewBag.SURNAME = "Kaya";
+            TempData["AGE"] = "17";
 
             return View();
         }
