@@ -12,8 +12,8 @@ namespace MVC.Controllers
         //GET: Home
         public ActionResult Index()
         {
-            ViewData["NAME"] = "Batuhan";
-            ViewBag.SURNAME = "Kaya";
+            ViewData["NAME"] = "BATUHAN";
+            ViewBag.SURNAME = "KAYA";
             TempData["AGE"] = "17";
 
             return View();
@@ -28,6 +28,13 @@ namespace MVC.Controllers
 
 
             return View(k);
+
          }
+        public ActionResult Login()
+        {
+        
+
+            return View();
+        }
     }
 }
