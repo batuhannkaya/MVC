@@ -23,7 +23,7 @@ namespace MVC.Controllers
             Kitap k = new Kitap();
             k.SeriNo = 97897;
             k.KitapAdi = "Kürk Mantolu Madonna";
-            k.Yaş = 1998;
+            k.Yaş = 17;
             k.YazarAdi = "Sabahattin Ali";
 
 
