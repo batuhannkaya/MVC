@@ -5,27 +5,40 @@
 }
 
 
-<div>
-    <h2><font color="red"><b>KİTAP BİLGİLERİ</b></font></h2>
-    <h4><font color="red">Seri No:</font><i>@Model.SeriNo</i></h4>
-    <h4><font color="red">Yazar Yaşı:</font><i>@Model.Yaş</i></h4>
-    <h4><font color="red">Yazar Adı:</font><i>@Model.YazarAdi</i></h4>
-    <h4><font color="red">Kitap Adı:</font><i>@Model.KitapAdi</i></h4>
-</div>
+@*<div>
+        <h2><font color="red"><b>KİTAP BİLGİLERİ</b></font></h2>
+        <h4><font color="red">Seri No:</font><i>@Model.SeriNo</i></h4>
+        <h4><font color="red">Yazar Yaşı:</font><i>@Model.Yaş</i></h4>
+        <h4><font color="red">Yazar Adı:</font><i>@Model.YazarAdi</i></h4>
+        <h4><font color="red">Kitap Adı:</font><i>@Model.KitapAdi</i></h4>
+        <input type="submit" value="Gönder" />
+    </div>*@
 
 
+
+
+@*@using (Html.BeginForm())
+    {
+
+    <p>Seri No:</p>@Html.TextBoxFor(x=>x.SeriNo)<br />
+    <p>Kitap Adı:</p>@Html.TextBoxFor(x=>x.KitapAdi)<br />
+    <p>Yazar Adı:</p>@Html.TextBoxFor(x=>x.YazarAdi)<br />
+    <p>Yazar Yaşı:</p>@Html.TextBoxFor(x=>x.Yaş)<br />
+    <input type="submit" value="Gönder" />
+    }*@
 
 
 @using (Html.BeginForm())
 {
-
-<p>Seri No:</p>@Html.TextBoxFor(x=>x.SeriNo)<br />
-<p>Kitap Adı:</p>@Html.TextBoxFor(x=>x.KitapAdi)<br />
-<p>Yazar Adı:</p>@Html.TextBoxFor(x=>x.YazarAdi)<br />
-<p>Yazar Yaşı:</p>@Html.TextBoxFor(x=>x.Yaş)<br />
-
-
-
-
-
+    <p>Seri No :@Html.TextBox("serino")</p><br />
+    <p>Kitap Adı :@Html.TextBox("kitapadi")</p><br />
+    <p>Yazar Adı :@Html.TextBox("yaş")</p><br />
+    <input type="submit" value="Gönder" />
 }
+
+
+
+<div>
+    Virileriniz : <br />
+    <h2>@ViewBag.veriler</h2>
+</div>

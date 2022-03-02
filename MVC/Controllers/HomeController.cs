@@ -18,23 +18,37 @@ namespace MVC.Controllers
 
             return View();
         }
-         public ActionResult Kitap()
-         {
+        public ActionResult Kitap()
+        {
             Kitap k = new Kitap();
             k.SeriNo = 97897;
             k.KitapAdi = "Kürk Mantolu Madonna";
-            k.Yaş = 17;
+            k.Yaş = 20;
             k.YazarAdi = "Sabahattin Ali";
 
-
             return View(k);
-
-         }
+        }
         public ActionResult Login()
         {
-        
-
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Kitap(int serino, string kitapadi, int yaş)
+        {
+            ViewBag.veriler = "Seri No :" + serino + "Kitap Adı :" + kitapadi + "Yaş :" + yaş;
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }
