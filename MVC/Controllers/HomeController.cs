@@ -41,6 +41,14 @@ namespace MVC.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult Örnek()
+        {
+            return View();
+
+        }
+
+
 
 
 

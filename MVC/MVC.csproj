@@ -110,6 +110,7 @@
     <Content Include="Views\Home\login.cshtml" />
     <Content Include="Views\Shared\Katagori.cshtml" />
     <Content Include="Views\Home\Kitap.cshtml" />
+    <Content Include="Views\Home\Örnek.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
